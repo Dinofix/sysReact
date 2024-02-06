@@ -13,6 +13,21 @@ export const Second = () => {
     );
   };
 
+  // const nombers: number[] = [10, 10, 20, 30, 50, 80, 130];
+  const numbers: number[] = [1, 1, 2, 3, 5, 8, 13];
+
+  // foor-loop
+  // const lis: JSX.Element[] = [];
+
+  // for (let i = 0; i < numbers.length; i++) {
+  //   lis.push(<li>{numbers[i]}</li>);
+  // }
+
+  // map
+  // const lis = nombers.map((value, i) => {
+  //   return <li key={i}>{value} </li>;
+  // });
+
   return (
     <>
       <div>
@@ -22,6 +37,16 @@ export const Second = () => {
         <button onClick={sumButton}>=</button>
         <p>{inputValue1 + inputValue2}</p>
       </div>
+      {/* <ul>
+        <h3>1st</h3>
+        {lis}
+      </ul> */}
+      <ul>
+        <h3>2nd</h3>
+        {numbers.map((value, i) => (
+          <li key={i}>{value} </li>
+        ))}
+      </ul>
     </>
   );
 };
