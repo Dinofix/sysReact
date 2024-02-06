@@ -1,5 +1,5 @@
 import "./App.css";
-import { Second } from "./components/First";
+import { Second } from "./components/Second";
 
 function App() {
   return (

@@ -14,11 +14,14 @@ export const Second = () => {
   };
 
   return (
-    <div>
-      <input type="number" id="input1" />
-      <button onClick={sumButton}>+</button>
-      <input type="number" id="input2" />
-      <p>{inputValue1 + inputValue2}</p>
-    </div>
+    <>
+      <div>
+        <h3>Addition</h3>
+        <input type="number" id="input1" /> {" + "}
+        <input type="number" id="input2" />
+        <button onClick={sumButton}>=</button>
+        <p>{inputValue1 + inputValue2}</p>
+      </div>
+    </>
   );
 };
