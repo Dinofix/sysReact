@@ -7,8 +7,8 @@ interface IReceiveDataProps {
 export const ReceiverOfData = (props: IReceiveDataProps) => {
   return (
     <div>
-      <q>{props.qwerty}</q>
-      <p>{props.positive}</p>
+      <input type="text" />
+      <input type="text" />
       <h4>
         {" "}
         <input type="checkbox" checked={props.answer} />
