@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "./App.css";
 import { ReceiverOfData } from "./components/ReceiverOfData";
 
 function App() {
+  const [qwertyValue, setQwertyValue] = useState("");
+
+  const handleQwertyChange = (newValue: string) => {
+    setQwertyValue(newValue);
+  };
+
   return (
     <>
-      <ReceiverOfData qwerty="Hello World" positive={69} answer={false}/>
+      <ReceiverOfData
+        qwerty={qwertyValue}
+        onQwertyChange={handleQwertyChange}
+        positive={69}
+        answer={false}
+      />
     </>
   );
 }
